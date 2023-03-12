@@ -4,6 +4,8 @@ local plugins = {
   "cmp",
   "luasnip",
   "mason",
+  "mason-null",
+  "noice",
   "nvim-lspconfig",
   "symbols-outline",
   "telescope",
