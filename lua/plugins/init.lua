@@ -2,6 +2,7 @@ P = {}
 
 local plugins = {
   "cmp",
+  "colorschemes",
   "luasnip",
   "mason",
   "mason-null",
