@@ -1,6 +1,7 @@
 P = {}
 
 local plugins = {
+  "alpha",
   "cmp",
   "colorschemes",
   "luasnip",
