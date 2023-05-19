@@ -6,6 +6,7 @@ return {
     opts = {
       ---@type lspconfig.options
       diagnostics = {
+        update_in_insert = true,
         virtual_text = false, -- disable inline diagnostics
       },
     },

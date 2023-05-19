@@ -14,3 +14,10 @@ local function map(mode, lhs, rhs, opts)
     vim.keymap.set(mode, lhs, rhs, opts)
   end
 end
+
+-- keep cursor vertically centered
+-- map("n", "j", "v:count == 0 ? 'gjzz' : 'jzz'", { expr = true, silent = true })
+-- map("n", "k", "v:count == 0 ? 'gkzz' : 'kzz'", { expr = true, silent = true })
+
+-- jump to bottom and keep cursor in center
+map("n", "G", "Gzz", { silent = true })

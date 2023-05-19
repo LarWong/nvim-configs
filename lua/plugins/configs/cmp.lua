@@ -18,15 +18,10 @@ return {
       opts.completion.completeopt = "menu,menuone,noinsert,noselect"
       -- Remove virtual text when slecting item in menu
       opts.experimental.ghost_text = false
+      opts.preselect = cmp.PreselectMode.None
 
       opts.mapping = vim.tbl_extend("force", opts.mapping, {
-        ["<CR>"] = cmp.mapping(function(fallback)
-          if cmp.visible() and cmp.get_active_entry() then
-            cmp.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = false })
-          else
-            fallback()
-          end
-        end, { "i", "s" }),
+        ["<CR>"] = cmp.mapping.confirm({ select = false }),
         ["<Tab>"] = cmp.mapping(function(fallback)
           if cmp.visible() then
             cmp.select_next_item()
