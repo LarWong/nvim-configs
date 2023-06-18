@@ -21,3 +21,6 @@ end
 
 -- jump to bottom and keep cursor in center
 map("n", "G", "Gzz", { silent = true })
+
+-- do not replace clipboard when pasting in V mode
+map("v", "p", '"_dP', { silent = true })
