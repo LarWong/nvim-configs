@@ -24,3 +24,6 @@ map("n", "G", "Gzz", { silent = true })
 
 -- do not replace clipboard when pasting in V mode
 map("v", "p", '"_dP', { silent = true })
+
+-- term mode: esc to exit insert
+map("t", "<Esc>", "<C-\\><C-n>", { silent = true })

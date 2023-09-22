@@ -6,3 +6,6 @@ local opt = vim.opt
 
 -- disable mouse capabilities
 opt.mouse = ""
+
+-- more lines
+opt.scrollback = 50000
